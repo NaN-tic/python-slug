@@ -6,7 +6,7 @@ Convert str to slug
 import re
 import unicodedata
 
-__version__ = '1.0'
+__version__ = '2.0'
 
 def slug(value):
     """
@@ -15,5 +15,5 @@ def slug(value):
     """
 
     value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
-    value = unicode(re.sub('[^\w\s-]', '', value).strip().lower())
+    value = re.sub('[^\w\s-]', '', value.decode('utf-8')).strip().lower()
     return re.sub('[-\s]+', '-', value)
