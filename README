@@ -8,6 +8,8 @@ Nutshell
 
 Here a simple example to convert html entity to ascii:
 
+.. code-block:: pycon
+
     >>> import slug
     >>> slug.slug('Hello world')
     hello-word
