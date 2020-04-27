@@ -17,6 +17,9 @@ setup(name='slug',
         description="Python module to convert str to slug",
         long_description=read('README'),
         packages=['slug'],
+        project_urls={
+            "Source Code": "https://github.com/nanticzz/python-slug",
+        },
         classifiers=[
             'Development Status :: 5 - Production/Stable',
             'Environment :: Web Environment',
